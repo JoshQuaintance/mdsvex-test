@@ -1,0 +1,20 @@
+---
+title: Svex up your markdown
+count: 25
+color: cadetblue
+list: [1, 2, 3, 4, "boo"]
+
+---
+
+<script>
+	import Counter from './Counter.svelte';
+
+    let number =0;
+</script>
+
+# { title }
+
+## Good stuff in your markdown
+
+Sometimes you need your widgets **inlined** (like this:<Counter count="{number}"/>) because why shouldn't you.
+Obviously you have access to values defined in YAML (namespaced under `metadata`) and anything defined in an fenced `js exec` block can be referenced directly.
